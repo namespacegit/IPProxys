@@ -83,13 +83,13 @@ CHINA_AREA=[u'河北',u'山东',u'辽宁',u'黑龙江',u'吉林'
 QQWRY_PATH="./data/qqwry.dat"
 
 THREADNUM = 20
-API_PORT=8000
+API_PORT=65123
 '''
 爬虫爬取和检测ip的设置条件
 不需要检测ip是否已经存在，因为会定时清理
 '''
-UPDATE_TIME=20*60#每半个小时检测一次是否有代理ip失效
-MINNUM = 50 #当有效的ip值小于一个时 需要启动爬虫进行爬取
+UPDATE_TIME=10*60#每半个小时检测一次是否有代理ip失效
+MINNUM = 25 #当有效的ip值小于一个时 需要启动爬虫进行爬取
 MAXTIME = 24*60 #当爬取存储开始一直使用的最大时间，如果超过这个时间，都删除
 
 TIMEOUT = 5#socket延时
