@@ -50,7 +50,7 @@ class SqliteHelper(SqlHelper):
         return result
 
     def selectCount(self):
-        self.cursor.execute('SELECT COUNT( DISTINCT ip) FROM %s'%self.tableName)
+        self.cursor.execute('SELECT COUNT( DISTINCT ip) FROM %s WHERE types=0'%self.tableName)
         count = self.cursor.fetchone()
         return count
 
